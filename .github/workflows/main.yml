@@ -34,7 +34,12 @@ jobs:
              -r cli,htmlextra
              
 
-
+      - name: neman report
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: Newman Report
+          path: newman/*.html
+      
 
 
 
